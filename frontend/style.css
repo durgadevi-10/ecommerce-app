@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #faf8f4;
+    color: #302820;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    background: #fff;
+}
+
+.logo, footer h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #514538;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #a2764c;
+}
+
+.hero {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background: #e9dfd2;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    margin: 18px 0;
+}
+
+.hero p {
+    line-height: 1.8;
+}
+
+.shop-btn, button {
+    display: inline-block;
+    background: #49382b;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    margin-top: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+button:hover, .shop-btn:hover {
+    background: #806044;
+}
+
+.section {
+    padding: 65px 8%;
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    margin-bottom: 28px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 15px 16px;
+    margin: 10px 0;
+    border: 1px solid #ded5ca;
+    border-radius: 7px;
+    background: #fff;
+    color: #302820;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #9b9187;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #8c6748;
+    box-shadow: 0 0 0 3px rgba(140, 103, 72, 0.12);
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+form {
+    max-width: 520px;
+}
+
+.auth-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+.auth-container > div, .admin-container {
+    background: #fff;
+    padding: 28px;
+    border: 1px solid #eee6dc;
+    border-radius: 10px;
+}
+
+.auth-container h3, .admin-container h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+footer {
+    background: #302820;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    line-height: 2;
+}
+
+#admin {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
